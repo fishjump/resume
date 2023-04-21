@@ -1,0 +1,281 @@
+%-------------------------
+% Resume in Latex
+% Author : Tejas Khairnar
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+
+
+% Set the margins
+\geometry{left=0.85cm, top=0.8cm, right=0.85cm, bottom=0.2cm}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \hspace{-3mm}{#1}:\hspace{1mm} & \hspace*{0pt}\hfill{\footnotesize{ #3}} \vspace{-0.5mm}\\ \hspace{-2.9mm}#2 
+    \end{tabular*}
+    \vspace{0mm}
+}
+
+\newcommand{\resumeExp}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1.2mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.1mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.5mm}
+}
+
+\newcommand{\resumeEdu}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.3mm} \small\textbf{#1} & \footnotesize{#3}\vspace{-1mm} \\
+        \hspace{-4.3mm} \footnotesize{#2} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-3.2mm}
+}
+
+\newcommand{\resumeAchieve}[3]
+{
+\hspace{-3.1mm}\textbf{ #1} & {#2} & \hspace{3mm}\footnotesize{#3}
+\vspace{0mm}\\
+}
+
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm,itemsep=-2.5mm]}
+
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-1.5mm}}
+
+\renewcommand{\arraystretch}{1}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+\newcommand{\name}{Yue Yu} % Your Name
+\newcommand{\course}{Ph.D Student Computer Engineering} % Your Course
+\newcommand{\roll}{N/A} % Your Roll No.
+\newcommand{\phoneUSA}{+1 (540)449-8166} % Your Phone Number
+\newcommand{\phoneCN}{+86 17623110614} % Your Phone Number
+\newcommand{\emaila}{yue.yu@superfish.me} %Email 1
+\newcommand{\github}{fishjump} %Github
+\newcommand{\website}{https://superfish.me} %Website
+\newcommand{\linkedin}{yue-yu-32701b213} %linkedin
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+
+%----------HEADING-----------------
+\begin{center}
+    \LARGE{\textbf{\name}}
+\end{center}
+\vspace{-6.5mm}
+\begin{center}
+    \small{\href{https://github.com/\github}{\faGithub \hspace{0.2mm} github.com/\github} |  \href{https://www.linkedin.com/in/\linkedin/}{\faLinkedinSquare \hspace{0.2mm} linkedin.com/in/\linkedin} | \href{mailto:\emaila}{\faSend \hspace{0.2mm} \emaila} \\ \faPhone \hspace{0.2mm} \phoneUSA | \faPhone \hspace{0.2mm} \phoneCN }
+\end{center}
+\vspace{-3mm}
+
+%-----------EDUCATION-----------------
+
+\vspace{-2.5mm}
+\section{Education}
+
+\resumeSubHeadingListStart
+\resumeEdu
+{Virginia Tech, USA} 
+{Ph.D, Computer Engineering} 
+{Jan 2023 - Now} %Event Dates
+{} %Website
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeEdu
+{Trinity College Dublin, Ireland} 
+{M.Sc, Computer Science} 
+{Aug 2021 - Aug 2022} %Event Dates
+{Grade: 2:1 Honor Degree} %Website
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeEdu
+{University of Washington, USA} 
+{Visiting Student, Electronic Engineering} 
+{Jul 2019 - Aug 2019} %Event Dates
+{GPA: 3.7/4.0} %Website
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeEdu
+{Chongqing University of Posts and Telecommunications, China} 
+{B.Sc, Computer Science \& Technology} 
+{2016 - 2020} %Event Dates
+{GPA: 3.4/4.0} %Website
+\resumeSubHeadingListEnd
+
+\vspace{-3.5mm}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeExp
+{Research Assistant - Virginia Tech}
+{System Software Research Group}
+{Jan 2023 - Now}
+{Virginia, USA}
+\resumeItemListStart
+\item[$\bullet$] Pointer Recovery From Binary
+\resumeItemListEnd
+
+\resumeExp
+{Associate Engineer - CIENet}
+{HSS EPC}
+{Aug 2020 - May 2021}
+{Shanghai, China}
+
+\resumeItemListStart
+\item[$\bullet$] SOAP Server,
+\item[$\bullet$] C++ Code Generator,
+\item[$\bullet$] JSON Parser.
+\resumeItemListEnd
+
+
+\resumeExp
+{Full Stack Developer, Soical Growth(Singapore, Remote)}
+{Instagram bots, and data analysis. Mainly use C\#.}
+{2018 - 2019}
+{Chongqing, China}
+\resumeItemListStart
+\item[$\bullet$] Instagram Bots Manager.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProject
+{Zephyr OS based Incremental Firmware OTA(Master dissertation)}
+{Prof.Jonathan Duke,  Dublin, Ireland} %Project Name, Location Name
+{Mar 2022 - Aug 2022} %Event Dates
+{} 
+\resumeItemListStart
+\item[$\bullet$] This project aims to make Zephyr OS support incremental firmware update by using IPv6 over BLE. The bootloader is MCUBoot, and I plan to implement this feature as a part of MCUMGR. In this stage, I plan to make some designs on firmware format like use different sections, put LTS functions in a “stable elf section”, and others in another section to get a smaller diff file and get a better performance.
+\resumeItemListEnd
+
+\resumeProject
+{GAN based Dual-layer Manga Colorization(Undergraduate dissertation)} %Project Name
+{Prof.Qiaosong Chen, Chongqing, China} %Project Name, Location Name
+{2020 - 2021} %Event Dates
+{} %Website
+\resumeItemListStart
+\item[$\bullet$] It is a two-layer Generative Adversarial Network model to colorize a manga sketch. The main challenge is that a manga sketch doesn’t have grayscale information like a gray photo. Thus, it is hard to expect a one step model offers both grayscale information and color information. My idea is to split the task into two. In the first stage, there’s a generator to convert the B/W image to a grayscale image, and the second stage is responsible to generate a colorful image by the previous grayscale image. The other one innovation is that I mix UNet and ResNet together in generator and the performance is good. 
+\resumeItemListEnd
+
+\resumeProject
+{x64 Operating System(Personal interest)} %Project Name
+{Myself, Shanghai, China} %Project Name, Location Name
+{2019 - 2020} %Event Dates
+{\href{https://github.com/fishjump/FirdOS}{https://github.com/fishjump/LearningOS}} %Website
+\resumeItemListStart
+\item[$\bullet$] The main supported functions:  1. UEFI bootloader which read E820 memory map, change screen resolution, read graphic buffer information, and put kernel file in the memory then do a far jump to the kernel. 2. In the start of the kernel, configure cr3 register for paging, load gdt and idt. For the external devices, I’ve already made drivers for screen and keyboard. Hard disk driver is not finished yet.
+\resumeItemListEnd
+
+% \resumeProject
+% {Other Projects}{}{}{}
+% \vspace{-3.5mm}
+% \resumeItemListStart
+% \item[$\bullet$] \textbf{Project 4 \raisebox{-0.3mm}{\href{https://github.com/}{\footnotesize\faExternalLink}} :} Project Description
+
+% \item[$\bullet$] \textbf{Project 5 \raisebox{-0.3mm}{\href{https://github.com/}{\footnotesize\faExternalLink}} :} Project Description
+
+% \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-5.5mm}
+
+%-----------Achievements-----------------
+
+\section{Achievements}
+\vspace{0.2mm}
+\small{\begin{tabular*}{\textwidth}[t]{p{0.25\textwidth} p{0.65\textwidth}@{\extracolsep{\fill}}r}
+\resumeAchieve{China Undergraduate MCM}{China Undergraduate Mathematical Contest in Modeling 2nd Prize in Chongqing Competition Area}{2018}
+\resumeAchieve{CQUPT MCM}{CQUPT Mathematical Contest in Modeling 1st Prize}{2018}
+\resumeAchieve{CQUPT Programming Contest}{CQUPT Programming Contest (2017) 2nd Prize}{2017}
+\resumeAchieve{CQUPT Scholarship}{3rd Tire Scholarship}{2016}
+\end{tabular*}}
+
+\vspace{-2.5mm}
+
+
+%-----------Technical Skills-----------------
+
+\section{Technical Skills}
+\vspace{0.2mm}
+
+\small{\begin{tabular*}{\textwidth}[t]{p{\textwidth}}
+
+\hspace{-3.1mm}{\textbf{ Programming languages(Primary):} C/C++, Rust, ASM, Python} \\
+\hspace{-3.1mm}{\textbf{ Programming languages(Secondary):} Golang, C\#} \\
+\hspace{-3.1mm}{\textbf{ Skills:} Pytorch, Tensorflow, OpenCV, Kubernetes, Docker}
+\end{tabular*}}
+
+%-------------------------------------------
+\end{document}
+
