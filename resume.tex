@@ -77,6 +77,16 @@
     \vspace{-3.2mm}
 }
 
+\newcommand{\resumeEdus}[5]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.3mm} \small\textbf{#1} & \footnotesize{#3}\vspace{-1mm} \\
+        \hspace{-4.3mm} \footnotesize{#2} & \footnotesize{#4}\vspace{-1mm} \\
+        \hspace{-4.3mm} \footnotesize{#5}
+    \end{tabular*}
+    \vspace{-3.2mm}
+}
+
 \newcommand{\resumeAchieve}[3]
 {
 \hspace{-3.1mm}\textbf{ #1} & {#2} & \hspace{3mm}\footnotesize{#3}
@@ -135,11 +145,12 @@
 \section{Education}
 
 \resumeSubHeadingListStart
-\resumeEdu
+\resumeEdus
 {Virginia Tech, USA} 
 {Ph.D, Computer Engineering} 
 {Jan 2023 - Now} %Event Dates
 {} %Website
+{Research Interests: Formal Verification, Formal Methods, Operating System}
 \resumeSubHeadingListEnd
 
 \resumeSubHeadingListStart
@@ -271,11 +282,9 @@
 
 \small{\begin{tabular*}{\textwidth}[t]{p{\textwidth}}
 
-\hspace{-3.1mm}{\textbf{ Programming languages(Primary):} C/C++, Rust, ASM, Python} \\
-\hspace{-3.1mm}{\textbf{ Programming languages(Secondary):} Golang, C\#} \\
-\hspace{-3.1mm}{\textbf{ Skills:} Pytorch, Tensorflow, OpenCV, Kubernetes, Docker}
+\hspace{-3.1mm}{\textbf{ Programming languages):} C/C++, Haskell, ASM, Python} \\
+\hspace{-3.1mm}{\textbf{ Skills:} Ghidra, LLVM, Isabelle/HOL, Pytorch, OpenCV}
 \end{tabular*}}
 
 %-------------------------------------------
 \end{document}
-
